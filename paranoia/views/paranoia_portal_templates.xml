@@ -1,0 +1,23 @@
+<odoo>
+    <template id="portal_game_page" name="Game Characters">
+        <t t-call="portal.frontend_layout">
+            <t t-set="chars" t-value="game.character_ids"/>
+            <div class="container mt16">
+                <t t-foreach="chars" t-as="char">
+                    <div class="row">
+                        <div class="col-md-2 text-center">
+                            <span t-field="char.image"
+                                t-options="{
+                                    'widget': 'image',
+                                    'class': 'img-rounded',
+                                    'style': 'width: 64px; height:64px'}"/>
+                        </div>
+                        <div class="col-md-8">
+                            <span t-field="char.name"/>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+    	<record id="paranoia_game_0" model="paranoia.game">
+    		<field name="name">OS1</field>
+    	</record>
+    </data>
+
+    <data noupdate="0">
+        <record id="paranoia_attribute_0" model="paranoia.attribute.template">
+            <field name="name">Violence</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="paranoia_attribute_1" model="paranoia.attribute.template">
+            <field name="name">Culot</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="paranoia_attribute_2" model="paranoia.attribute.template">
+            <field name="name">Neurones</field>
+            <field name="sequence">3</field>
+        </record>
+        <record id="paranoia_attribute_3" model="paranoia.attribute.template">
+            <field name="name">Mécanique</field>
+            <field name="sequence">4</field>
+        </record>
+    </data>
+
+    <data noupdate="0">
+    	<record id="paranoia_player_0_caro" model="paranoia.player">
+    		<field name="name">Lechat</field>
+    	</record>
+    	<record id="paranoia_player_1_marc" model="paranoia.player">
+    		<field name="name">Marc</field>
+    	</record>
+    	<record id="paranoia_player_2_dada" model="paranoia.player">
+    		<field name="name">Dada</field>
+    	</record>
+    </data>
+
+    <data noupdate="0">
+    	<record id="paranoia_character_0_caro" model="paranoia.character">
+    		<field name="name">Piiit</field>
+    		<field name="accreditation">IR</field>
+    		<field name="sector">PAN</field>
+    		<field name="clone_number">1</field>
+    		<field name="game_id" ref="paranoia_game_0"/>
+    		<field name="player_id" ref="paranoia_player_0_caro"/>
+    		<field name="image" type="base64" file="paranoia/static/img/piit.png"/>
+    	</record>
+
+    	<record id="paranoia_character_1_marc" model="paranoia.character">
+    		<field name="name">Sweet</field>
+    		<field name="accreditation">IR</field>
+    		<field name="sector">PAN</field>
+    		<field name="clone_number">1</field>
+    		<field name="game_id" ref="paranoia_game_0"/>
+    		<field name="player_id" ref="paranoia_player_1_marc"/>
+    		<field name="image" type="base64" file="paranoia/static/img/sweet.jpg"/>
+    	</record>
+
+    	<record id="paranoia_character_2_dada" model="paranoia.character">
+    		<field name="name">Cheese</field>
+    		<field name="accreditation">IR</field>
+    		<field name="sector">PAN</field>
+    		<field name="clone_number">1</field>
+    		<field name="game_id" ref="paranoia_game_0"/>
+    		<field name="player_id" ref="paranoia_player_2_dada"/>
+    		<field name="image" type="base64" file="paranoia/static/img/cheese.png"/>
+    	</record>
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_paranoia_game_user,paranoia.game.user,model_paranoia_game,base.group_user,1,1,1,1
+access_paranoia_player_user,paranoia.player.user,model_paranoia_player,base.group_user,1,1,1,1
+access_paranoia_character_user,paranoia.character.user,model_paranoia_character,base.group_user,1,1,1,1
+access_paranoia_attribute_template_user,paranoia.attribute.template.user,model_paranoia_attribute_template,base.group_user,1,1,1,1
+access_paranoia_attribute_user,paranoia.attribute.user,model_paranoia_attribute,base.group_user,1,1,1,1
+access_paranoia_skill_template_user,paranoia.skill.template.user,model_paranoia_skill_template,base.group_user,1,1,1,1
+access_paranoia_skill_user,paranoia.skill.user,model_paranoia_skill,base.group_user,1,1,1,1
